@@ -7,14 +7,16 @@ import { AddResourceComponent } from './add-resource/add-resource.component';
 import { AddProjectComponent } from './add-project/add-project.component';
 import { NotificationEmitComponent } from './notification-emit/notification-emit.component';
 import { PrincipalMenuComponent } from './principal-menu/principal-menu.component';
+import { ResourceProjectComponent } from './resource-project/resource-project.component';
 
 @NgModule({
-  declarations: [	
+  declarations: [		
     AppComponent,
     AddResourceComponent,
     AddProjectComponent,
     NotificationEmitComponent,
-      PrincipalMenuComponent
+      PrincipalMenuComponent,
+      ResourceProjectComponent
    ],
   imports: [
     BrowserModule,
