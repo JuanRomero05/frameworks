@@ -5,12 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AddResourceComponent } from './add-resource/add-resource.component';
 import { AddProjectComponent } from './add-project/add-project.component';
+import { NotificationEmitComponent } from './notification-emit/notification-emit.component';
+import { PrincipalMenuComponent } from './principal-menu/principal-menu.component';
 
 @NgModule({
-  declarations: [		
+  declarations: [	
     AppComponent,
-      AddResourceComponent,
-      AddProjectComponent
+    AddResourceComponent,
+    AddProjectComponent,
+    NotificationEmitComponent,
+      PrincipalMenuComponent
    ],
   imports: [
     BrowserModule,
