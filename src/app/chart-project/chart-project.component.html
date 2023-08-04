@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="card text-center mx-5 my-5">
+    <div class="card-header">CURVA DE AVANCE DE PROYECTO</div>
+    <div class="card-body">
+      <div class="input-group my-3">
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Selecciona el proyecto</option>
+          <option value="1">proyecto1</option>
+          <option value="2">proyecto2</option>
+          <option value="3">proyecto3</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn btn-outline-primary mb-3">
+        Visualizar
+      </button>
+
+      <ngx-charts-line-chart
+        [view]="view"
+        [scheme]="colorScheme"
+        [showXAxisLabel]="showXAxisLabel"
+        [showYAxisLabel]="showYAxisLabel"
+        [xAxis]="xAxis"
+        [yAxis]="yAxis"
+        [xAxisLabel]="xAxisLabel"
+        [yAxisLabel]="yAxisLabel"
+        [timeline]="timeline"
+        [results]="multi"
+        (select)="onSelect($event)"
+        (activate)="onActivate($event)"
+        (deactivate)="onDeactivate($event)"
+      >
+      </ngx-charts-line-chart>
+    </div>
+  </div>
+</div>
